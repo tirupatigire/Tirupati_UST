@@ -1,7 +1,10 @@
+import os
 import re
 
 
-def check_the_validity_of_password(input_str):
+def check_the_validity_of_password():
+    input_file_path = os.path.abspath("program2_input.txt")
+    input_str = get_input_string(file_path=input_file_path)
     passwords_list = input_str.split(',')
     correct_passwords = []
     for pwd in passwords_list:
@@ -15,3 +18,8 @@ def check_the_validity_of_password(input_str):
             correct_passwords.append(pwd)
     valid_passwords = ','.join(correct_passwords)
     print(valid_passwords)
+
+
+def get_input_string(file_path):
+    with open(file_path, 'r') as file:
+        return file.read().strip()
