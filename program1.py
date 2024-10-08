@@ -2,7 +2,7 @@ import os
 
 
 def check_frequency_of_words():
-    input_file_path = os.path.abspath("program1_input.txt")
+    input_file_path = os.path.abspath("inputs\\program1_input.txt")
     input_str = get_input_string(file_path=input_file_path)
     words_list = input_str.split()
     freq = {}
