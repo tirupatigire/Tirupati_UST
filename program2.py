@@ -15,6 +15,3 @@ def check_the_validity_of_password(input_str):
             correct_passwords.append(pwd)
     valid_passwords = ','.join(correct_passwords)
     print(valid_passwords)
-
-
-check_the_validity_of_password(input_str="asqwr1234@1,aF145#,2w3E*,2We3345")
