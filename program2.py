@@ -1,3 +1,11 @@
+#####################################################################################################################################
+# Program2.py *check_the_validity_of_password*: Validates a list of passwords based on specific criteria read from another text file.
+# Example -
+# input_password = asqwr1234@1,aF145#,2w3E*,2We3345 
+# Output = asqwr1234@1      
+# This expected output is wrong as it doesn't meet the upper case character to be used criteria so the correct output should be aF145#
+######################################################################################################################################
+
 import os
 import re
 
@@ -16,8 +24,9 @@ def check_the_validity_of_password():
         check_upper_case = re.search(r"[A-Z]", pwd)
         if check_special_char and check_numbers and check_lower_case and check_upper_case:
             correct_passwords.append(pwd)
+            #
     valid_passwords = ','.join(correct_passwords)
-    print(valid_passwords)
+    print(valid_passwords) 
 
 
 def get_input_string(file_path):
