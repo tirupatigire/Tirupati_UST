@@ -1,3 +1,16 @@
+#####################################################################################################################################
+# Program1.py *check_frequency_of_words*: Counts the frequency of each word from a specified text file.
+# Example -
+# input_string = "which is better python 2 or python 3"
+# output = ('2', 1)
+#          ('3', 1)
+#          ('better', 1)
+#          ('is', 1)
+#          ('or', 1)
+#          ('python', 2)
+#          ('which', 1)
+######################################################################################################################################
+
 import os
 
 
